@@ -1,0 +1,18 @@
+#N canvas 538 374 450 475 12;
+#X obj 30 74 oscparse;
+#X obj 30 120 list trim;
+#X obj 30 22 netreceive -u -b 9000;
+#X obj 30 180 route sfx;
+#X obj 30 224 print sfx;
+#X obj 114 149 route state;
+#X obj 114 185 route player;
+#X obj 114 222 route jump_ratio;
+#X obj 114 262 print ratio;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 0 5 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
