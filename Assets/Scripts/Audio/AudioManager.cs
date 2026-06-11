@@ -229,6 +229,7 @@ namespace Platformer.Audio
                     return "death";
 
                 case "enemy/landedon":
+                case "enemy/death":
                 case "enemy/landed/on":
                 case "enemy/landonenemy":
                 case "player/landonenemy":
